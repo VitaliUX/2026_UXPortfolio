@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Layer_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="in_ico" transform="translate(-49.000000, 0.000000)" fill="#999999" fill-rule="nonzero">
+            <g id="Layer_2" transform="translate(49.000000, 0.000000)">
+                <path d="M40,40 L0,40 L0,0 L40,0 L40,40 Z M2,38 L38,38 L38,2 L2,2 L2,38 Z" id="Shape"></path>
+                <g id="Group" transform="translate(5.000000, 5.000000)">
+                    <rect id="Rectangle-path" x="1" y="10" width="6" height="19"></rect>
+                    <circle id="Oval" cx="4" cy="4" r="4"></circle>
+                    <path d="M16,13 L16,10 L10,10 L10,29 L16,29 L16,17 C21.5,11.7 23,16 23,17 L23,29 L29,29 L29,22 C29,22 29,20 29,17 C29,3 16,13 16,13 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>Vitali Tsernosev - SolutionSet Portfolio</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="./css/jquery.lighter.css" type="text/css"/>
+      <link href="./css/rs-default.css" rel="stylesheet"/>
+      <link href="./css/royalslider.css" rel="stylesheet"/>
+      <link href="./css/nprogress.css" rel="stylesheet"/>
+      <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Raleway:100,400,300,500,600,700" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,600" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="./js/jquery.royalslider.min.js"></script>
+      <script type="text/javascript" src="./js/jquery.simplesidebar.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <script src="./js/nprogress.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {
+         $(".royalSlider").royalSlider({
+         autoScaleSlider: true,
+         keyboardNavEnabled: true,
+         controlNavigation: 'thumbnails',
+         thumbs: {
+         	spacing: 2,
+         	arrowsAutoHide: true
+         }
+         });
+         });
+			</script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+   
+
+
+
+
+
+<style id="splendor-design-system-override">
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  /* Splendor Design System Overrides */
+  body, html, .main_content {
+    background-color: hsl(0, 0%, 4%) !important;
+    background: hsl(0, 0%, 4%) !important;
+    color: hsl(0, 0%, 96%) !important;
+    font-family: 'Inter', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Headings map to .display-serif */
+  h1, h2, h3, h4, h5, h6, .display-serif {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em !important;
+    line-height: 0.92 !important;
+    color: hsl(0, 0%, 96%) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Body text */
+  p, li, article {
+    font-family: 'Inter', sans-serif !important;
+    color: hsl(0, 0%, 60%) !important; /* muted-foreground */
+    line-height: 1.6 !important;
+  }
+
+  /* Accent highlights */
+  mark, .accent, .highlight, b, strong {
+    background: transparent !important;
+    color: hsl(218, 100%, 56%) !important; /* electric blue accent */
+    font-weight: 600 !important;
+  }
+
+  /* Monospace mapping for metadata / small text */
+  .mono, .date, .role, .client, .eyebrow {
+    font-family: 'JetBrains Mono', monospace !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2em !important;
+    font-size: 11px !important;
+    color: hsl(218, 100%, 56%) !important;
+  }
+
+  /* Links */
+  a {
+    color: hsl(0, 0%, 96%) !important;
+    transition: color 0.3s ease !important;
+  }
+  a:hover {
+    color: hsl(218, 100%, 56%) !important;
+  }
+
+  /* Structural elements & borders */
+    section,
+    .section,
+    .block,
+    .plate,
+    .white,
+    .grey,
+    .royalSlider,
+    .rsOverflow,
+    .rsSlide,
+    .rsNav,
+    h1,
+    h2,
+    h3,
+    hr {
+      background-color: transparent !important;
+      background: transparent !important;
+    border-color: hsl(0, 0%, 14%) !important; /* border-border */
+  }
+
+  /* Images / RoyalSlider */
+  .illustration img, .rsImg, .royalSlider {
+    border-radius: 0px !important; /* brutalist/sharp edges from Splendor */
+  }
+  
+  /* Clean up legacy layout paddings to match Splendor py-24 md:py-32 */
+  .main_content section {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  /* Hide the original navigation since React Nav is taking over */
+  .header, #header_nav, .navbar.left, .sidebar {
+    display: none !important;
+  }
+  .main_content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+</style>
+
+</head>
+   <body style="display: none; background:#666;">
+     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+         <symbol id="icon-chevron-left" viewBox="0 0 512 512">
+           <path d="m368 160l-64-64-160 160 160 160 64-64-96-96z"/>
+         </symbol>
+
+         <symbol id="icon-three-bars" viewBox="0 0 512 512">
+           <path d="m64 96l0 64 384 0 0-64z m0 192l384 0 0-64-384 0z m0 128l384 0 0-64-384 0z"/>
+         </symbol>
+
+         <symbol id="icon-triangle-left" viewBox="0 0 512 512">
+           <path d="m160 256l192 192 0-384z"/>
+         </symbol>
+
+     </svg>
+      <!-- Back Button 	-->
+      <div class="navbar left">
+         <div class="back-icon">
+           <a href="index.html" target="_self" title="Home"><svg class="icon-chevron-left"><use xlink:href="#icon-chevron-left"></use></svg></a>
+         </div>
+      </div>
+      <!-- Side Menu 	-->
+      <div class="sidebar">
+         <ul>
+            <li><a href="index.html#intro">Home</a></li>
+            <li><a href="index.html#folio" class="active">Portfolio</a></li>
+            <li><a href="index.html#bio">About Me</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+         </ul>
+      </div>
+      <!-- header -->
+      <div id="header_nav" class="header trans main" >
+         <div class="logo hideOnSmall">
+            <a href="index.html" title="Home"><img src="./img/logo_n.png" alt="logo"/></a>
+         </div>
+         <nav id="mobile-nav" class="nav hideOnSmall" role="navigation">
+            <ul>
+               <li><a href="index.html#intro">Home</a></li>
+               <li class="active"><a href="index.html#folio">Portfolio</a></li>
+               <li><a href="index.html#bio">About Me</a></li>
+               <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="icons">
+            <a href="resume/Vitali_Tsernosev_UX_AI_VD.pdf" target="_blank" title="Download Resume"><img src="./img/re_ico99.svg" alt="Download Resume" width="20" height="20"></a>
+            <a href="http://lnkd.in/cSg9Dz/" target="_blank" title="LinkedIn Profile"><img src="./img/in_ico99.svg" alt="LinkedIn Profile" width="20" height="20"></a>
+            <a href="mailto:vitali@vett.biz" target="_top" title="Email me"><img src="./img/em_ico99.svg" alt="Email me" width="20" height="20"></a>
+         </div>
+      </div>
+      <!-- Main Container -->
+      <div class="main_content portfolio" id="wrap">
+         <!-- Project Section -->
+         <section id="project" class="clearfix">
+            <h3><strong>SolutionSet</strong> UX Projects</h3>
+            <div class="royalSlider rsDefault rsHor rsWithThumbs rsWithThumbsHor " id="full-width-slider">
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/39.jpg" alt=""/>
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/39.jpg" alt=""/></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/11.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/11.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/3.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/3.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/9.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/9.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/10.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/10.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/12.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/12.jpg" alt="" /></div>
+               </div>
+               <!--<div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/14.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/14.jpg" alt="" /></div>
+               </div>-->
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/15.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/15.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/16.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/16.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/17.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/17.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/18.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/18.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/19.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/19.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/20.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/20.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/21.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/21.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/22.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/22.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/23.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/23.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/24.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/24.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/25.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/25.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/26.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/26.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/27.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/27.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/28.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/28.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/29.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/29.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/30.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/30.jpg" alt="" /></div>
+               </div>
+               <!--<div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/33.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/33.jpg" alt="" /></div>
+               </div>-->
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/34.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/34.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/35.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/35.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/app/10.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/app/10.jpg" alt="" /></div>
+               </div>
+               <div class="rsContent">
+                  <img class="rsImg" src="./img/portfolios/solutionset/app/11.jpg" alt="" />
+                  <div class="rsTmb"><img class="rsImg" src="./img/portfolios/solutionset/app/11.jpg" alt="" /></div>
+               </div>
+            </div>
+         </section>
+         <div id="contactMini" class="clearfix">
+            <div class="contactInfo">
+               <strong>VITALI TSERNOSEV</strong><br>
+               C: 650.862.0454, E: <a href="mailto:vitali@vett.biz" target="_top">vitali@vett.biz</a>
+               <!--<br>
+                  4276 Wilkie Way Apt O, Palo Alto, CA 94306<br> -->
+            </div>
+         </div>
+      </div>
+      <script  type="text/javascript" src="./js/main.js"></script>
+   </body>
+</html>
