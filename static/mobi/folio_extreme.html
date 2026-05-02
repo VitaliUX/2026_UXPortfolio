@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Vitali Tsernosev - Acqueon Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" href="css/base.css">
+  <link href="./css/rs-default.css" rel="stylesheet" />
+  <link href="./css/royalslider.css" rel="stylesheet" />
+  <link href="./css/nprogress.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:100,400,300,500,600,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,600" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.royalslider.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.simplesidebar.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="./js/nprogress.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".royalSlider").royalSlider({
+        autoScaleSlider: true,
+        keyboardNavEnabled: true,
+        controlNavigation: 'thumbnails',
+        thumbs: {
+          spacing: 2,
+          arrowsAutoHide: true
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+
+
+
+
+  <style id="splendor-design-system-override">
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    /* Splendor Design System Overrides */
+    body,
+    html,
+    .main_content {
+      background-color: hsl(0, 0%, 4%) !important;
+      background: hsl(0, 0%, 4%) !important;
+      color: hsl(0, 0%, 96%) !important;
+      font-family: 'Inter', sans-serif !important;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Headings map to .display-serif */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .display-serif {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.04em !important;
+      line-height: 0.92 !important;
+      color: hsl(0, 0%, 96%) !important;
+      margin-bottom: 1rem !important;
+    }
+
+    /* Body text */
+    p,
+    li,
+    article {
+      font-family: 'Inter', sans-serif !important;
+      color: hsl(0, 0%, 60%) !important;
+      /* muted-foreground */
+      line-height: 1.6 !important;
+    }
+
+    /* Accent highlights */
+    .accent,
+    .highlight,
+    b,
+    strong {
+      background: transparent !important;
+      color: hsl(218, 100%, 56%) !important;
+      /* electric blue accent */
+      font-weight: 600 !important;
+    }
+
+    /* Subheading style for Mark Tags */
+    mark {
+      background: transparent !important;
+      color: hsl(0, 0%, 80%) !important; /* Slightly more contrast */
+      font-family: 'Inter', sans-serif !important;
+      font-size: 0.9rem !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.1em !important;
+      display: block !important;
+      margin-top: 2rem !important;
+      margin-bottom: 0.75rem !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
+    /* Monospace mapping for metadata / small text */
+    .mono,
+    .date,
+    .role,
+    .client,
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.2em !important;
+      font-size: 11px !important;
+      color: hsl(218, 100%, 56%) !important;
+    }
+
+    /* Links */
+    a {
+      color: hsl(0, 0%, 96%) !important;
+      transition: color 0.3s ease !important;
+    }
+
+    a:hover {
+      color: hsl(218, 100%, 56%) !important;
+    }
+
+    /* Structural elements & borders */
+    section,
+    .section,
+    .block,
+    .plate,
+    .white,
+    .grey,
+    .royalSlider,
+    .rsOverflow,
+    .rsSlide,
+    .rsNav,
+    h1,
+    h2,
+    h3,
+    hr {
+      background-color: transparent !important;
+      background: transparent !important;
+      border-color: hsl(0, 0%, 14%) !important;
+      /* border-border */
+    }
+
+    /* Images / RoyalSlider */
+    .illustration img,
+    .rsImg,
+    .royalSlider {
+      border-radius: 0px !important;
+      /* brutalist/sharp edges from Splendor */
+    }
+
+    /* Clean up legacy layout paddings to match Splendor py-24 md:py-32 */
+    .main_content section {
+      padding-top: 6rem !important;
+      padding-bottom: 6rem !important;
+    }
+
+    /* Hide the original navigation since React Nav is taking over */
+    .header,
+    #header_nav,
+    .navbar.left,
+    .sidebar {
+      display: none !important;
+    }
+
+    .main_content {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+  </style>
+
+</head>
+
+<body style="display: none;">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="icon-chevron-left" viewBox="0 0 512 512">
+      <path d="m368 160l-64-64-160 160 160 160 64-64-96-96z" />
+    </symbol>
+
+    <symbol id="icon-three-bars" viewBox="0 0 512 512">
+      <path d="m64 96l0 64 384 0 0-64z m0 192l384 0 0-64-384 0z m0 128l384 0 0-64-384 0z" />
+    </symbol>
+
+    <symbol id="icon-triangle-left" viewBox="0 0 512 512">
+      <path d="m160 256l192 192 0-384z" />
+    </symbol>
+
+  </svg>
+  <!-- Back Button 	-->
+  <div class="navbar left">
+    <div class="back-icon">
+      <a href="index.html" target="_self" title="Home"><svg class="icon-chevron-left">
+          <use xlink:href="#icon-chevron-left"></use>
+        </svg></a>
+    </div>
+  </div>
+  <!-- Side Menu 	-->
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html#intro">Home</a></li>
+      <li><a href="index.html#folio" class="active">Portfolio</a></li>
+      <li><a href="index.html#bio">About Me</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+  <!-- header -->
+  <div id="header_nav" class="header main">
+    <div class="logo hideOnSmall">
+      <a href="index.html" title="Home"><img src="./img/logo_n.png" alt="logo" /></a>
+    </div>
+    <nav id="mobile-nav" class="nav hideOnSmall" role="navigation">
+      <ul>
+        <li><a href="index.html#intro">Home</a></li>
+        <li class="active"><a href="index.html#folio">Portfolio</a></li>
+        <li><a href="index.html#bio">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <a href="resume/Vitali_Tsernosev_UX_AI_VD.pdf" target="_blank" title="Download Resume"><img
+          src="./img/re_ico99.svg" alt="Download Resume" width="20" height="20"></a>
+      <a href="http://lnkd.in/cSg9Dz/" target="_blank" title="LinkedIn Profile"><img src="./img/in_ico99.svg"
+          alt="LinkedIn Profile" width="20" height="20"></a>
+      <a href="mailto:vitali@vett.biz" target="_top" title="Email me"><img src="./img/em_ico99.svg" alt="Email me"
+          width="20" height="20"></a>
+    </div>
+  </div>
+  <!-- Main Container -->
+  <div class="main_content casestudy fullpage" id="wrap">
+    <!-- Project Section -->
+    <section class="plate fullwidth clearfix txt">
+      <h1>Extreme Engagement Plarform SaaS UX Redesign</h1>
+
+      <div>
+        <h3>Project Overview</h3>
+        <p>Acqueon Engagement Platform cloud-based omnichannel engagement platform for Amazon Connect and Cisco Unified,
+          Packaged and Hosted Contact Centers.</p>
+        <p>Main clients are Banking and Telemarketing businesses.</p>
+
+        <mark>Product Problems</mark>
+        <p>The current product features and flows were a source of confusion for our clients.</p>
+        <p>Not intuitive navigation and basic active elements.</p>
+        <p>Too many unnecessary and complex technical settings (for a non-technical user, business user) are existing in
+          The New Campaign Creation flow.</p>
+        <p>The Dashboard doesn't have needful and useful information and metrics for business sale specialists,
+          reflecting current live sales status.</p>
+        <p>Errors in user iterations.</p>
+        <p>Also, the UI Design started to feel outdated compared to our competitors.</p>
+
+
+        <mark>Goals</mark>
+
+        <ul class="bullets">
+          <li>To optimize the process of New Campaign Creating for an average non-techy user.</li>
+          <li>To create different dashboards for specific user types, especially for Sales Specialists. </li>
+          <li>Refresh design, optimize the navigation, fix UX errors.</li>
+        </ul>
+      </div>
+      <div style="" class="illustration noEffect right">
+        <img style="" class="rsImg" src="./img/ac_bg.png" width="auto" alt="Acqueon Engagement Platform" />
+      </div>
+      <div class="toolbar">
+        <ul>
+          <li><strong>Role:</strong> UX/UI Designer</li>
+          <li><strong>Tools:</strong> Figma, XD, Zeplin, Omnigraffle, Zeroheight</li>
+          <li><strong>UX areas:</strong> Qualitive Research, Personas Building, Information Architecture, Wireframes,
+            Product Design, Design System Creation</li>
+
+          <li><strong>Date:</strong> 2020</li>
+        </ul>
+      </div>
+    </section>
+    <section id="" class="white clearfix txt">
+
+
+
+
+      <div>
+        <h3>1.0 Discovery & Tasks Analysis</h3>
+        <mark>Internal Discovery Research</mark>
+
+        <p>We decided to conduct a set of internal quantitive discovery user research interviews.
+          The idea was to collect current product issues, pain points, ideas,
+          to define main user tasks and flows.
+          We interviewed our Software Implementation Engineers
+          (they usually work directly with our clients on the Software implementation),
+          management team, and main stack holders. The total number of participants: ~ 10.
+          We conducted the interviews via video conferencing, phone, and in-person.</p>
+
+        <mark>Features Prioritization</mark>
+
+
+
+
+        <p>Based on our discovery research we defined main UX issues and features for our future updates.
+          We prioritized them for the next release using the effort/impact matrix,
+          determined MVP (minimal viable product) for the next release.
+        </p>
+      </div>
+
+
+
+      <div style="transform: scale(0.8);" class="illustration right">
+        <img class="rsImg" src="./img/ac_tb.jpg" alt="Tasks" />
+
+      </div>
+
+
+
+
+
+
+    </section>
+    <section id="" class="plate fullwidth clearfix txt">
+
+
+
+
+      <div>
+        <h3>2.0 Personas & Wireframes</h3>
+        <mark>Personas</mark>
+        <p>Based on their findings, and input from our VP of Engineering and user task analysis I determined main
+          personas and user journeys.</p>
+        <p>For the first release, we decided to build Dashboard UX just a Business Sales Specialist, as the top priority
+          feature.</p>
+
+        <mark>Interaction Design</mark>
+        <p>I printed out and reviewed in detail all user flows of the previous version of the software. I optimized all
+          pain points, minimized the number of steps in interactions. Removed all outdated and not suitable UI
+          components and application terms at the wireframes building stage.</p>
+
+        <p>One of the objectives was to design an intuitive application for even not technical audience - sales
+          specialists, cc (contact center) agents supervisors, cc agent. The user experience should be simple and
+          organic as basic Tax filling or creating a new IRA account. Should look more like a consumer faced
+          application. I tried to implement these principles in my interaction design.</p>
+
+        <p>We optimized cluttered and overwhelmed navigation, defined new Navigation Architecture.</p>
+
+        <p>For my wireframes, I used Figma first time, worked with Omnigraffle before.</p>
+
+      </div>
+      <div style="" class="illustration right noEffect">
+        <img class="rsImg" src="./img/ac_pr.png" alt="Personas" />
+      </div>
+      <div style="transform: scale(1);" class="illustration noEffect"><img src="./img/ac_bp1.png" alt="Research" />
+      </div>
+      <div style="" class="illustration nopadding noEffect">
+        <img class="rsImg" src="./img/ac_wf.png" alt="Wireframes" />
+      </div>
+    </section>
+
+    <section id="" class="white clearfix txt">
+
+
+
+
+      <div>
+        <h3>3.0 UX Evaluation</h3>
+        <p>We decided to test a clickable XD prototype, and also have a set of remote online interviews. XD tool (Figma
+          as well) is great for collaborative online testing and getting quick feedback.</p>
+        <p>Our management team, stakeholders, and implementation team feedback were analyzed and incorporated into the
+          final design solution.</p>
+
+
+      </div>
+
+      <div style="transform: scale(1);" class="illustration right noEffect">
+        <img class="rsImg" src="./img/ac_sc3.png" alt="Results" />
+      </div>
+
+
+    </section>
+
+
+    <section id="" class="plate fullwidth clearfix txt">
+
+
+
+
+      <div>
+        <h3>4.0 Final Design Solution</h3>
+        <p>As the main design solution, we selected minimalistic, neutral, calm design. It suits well for white label
+          solution and a custom skin design implementation in the future.
+          I followed the company fonts and colors style guides.</p>
+
+        <p>For the VD solution I also used Figma first time and pretty happy with the tool.</p>
+      </div>
+
+      <div style="" class="illustration noEffect right">
+        <img class="rsImg" src="./img/ac_vd4.png" alt="Results" />
+      </div>
+    </section>
+
+    <section id="" class="white clearfix txt">
+
+
+
+
+      <div>
+        <h3>5.0 Before / After</h3>
+        <p>Now you can compare the Dashboard and the Create New Campaign Wizard designs. What was before and what our
+          team has designed.</p>
+
+      </div>
+
+      <div style="" class="illustration right noEffect">
+        <img class="rsImg" src="./img/ac_ba.png" alt="Before/After" />
+      </div>
+
+
+
+    </section>
+
+    <section class="plate fullwidth clearfix dark txt last">
+
+      <div>
+        <h3>6.0 Design System Building</h3>
+        <p>One of the project objectives was to unify style and design elements across all the Acqueon Tools. I decided
+          to build the Acqueon Design System.</p>
+        <p>I selected Product calling Zeroheight for DS building. It has a plugin allowing to integrate Figma, XD or
+          Zeplin components directly.</p>
+      </div>
+
+      <div style="" class="illustration right noEffect">
+        <img class="rsImg" src="./img/ac_ds4.png" alt="Design System" />
+      </div>
+    </section>
+
+
+
+
+
+  </div>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

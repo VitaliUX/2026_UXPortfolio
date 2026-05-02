@@ -1,0 +1,291 @@
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		position: fixed;
+		display: block;
+		top: 0;
+		right: 4%;
+		z-index: 600;
+	}
+	#mobile-nav{
+		display: none;
+	}
+	#header_nav .hideOnSmall {
+		display: none;
+	}
+	.navbar.left {
+		left: 0;
+		right: auto;
+	}
+	#header_nav .icons {
+		display: none;
+	}
+	.back-icon {
+		width: 50px;
+		height: 50px;
+	}
+	.sidebar {
+		position: fixed;
+		top: 56px;
+		bottom: 0;
+		width: 300px;
+		background-color: #111;
+		height: auto;
+		z-index: 600;
+	}
+	.sidebar ul {
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		height: auto;
+	}
+	.sidebar li {
+		height: 50px;
+		margin-bottom: 1px;
+		vertical-align: middle;
+		font-size: 14px;
+		color: #eee;
+	}
+	.sidebar li a {
+		height: 50px;
+		padding: 0 20px;
+		font-size: 18px;
+		font-weight: 300;
+		color: #eee;
+		display: inline-block;
+		line-height: 50px;
+	}
+	.sidebar .active a {
+		color: #eee;
+		background: #111;
+		padding: 0 20px;
+		border-radius: 0;
+	}
+	.menu-icon {
+		width: 50px;
+		height: 50px;
+		vertical-align: middle;
+		text-align: center;
+		cursor: pointer;
+	}
+	.menu-icon img {
+		width: 34px;
+		height: 34px;
+		margin: 8px;
+		background: #333;
+	}
+	#brand h1 {
+		font-size: 30px;
+		padding: 0 40px;
+		height: auto;
+		line-height: 2;
+		margin-top: 100px;
+	}
+	#brand h3 {
+		top: 0;
+		left: 30%;
+	}
+	.folio p {
+		width: 100%;
+	}
+	#folio,
+	#folio3 {
+		background-image: none;
+	}
+	.project.yp,
+	.project.yuzu,
+	.project.ss,
+	.project.cisco,
+	.project.kollective {
+		display: none;
+	}
+	#bio p {
+		width: 100%;
+		margin: 0 0 0px 0;
+	}
+	#bio p:last-child {
+		margin-bottom: 100px
+	}
+	.contactInfo>div {
+		width: 100%;
+	}
+	.contactInfo {
+		margin-top: 0;
+	}
+	.LI-profile-badge {
+		position: static;
+		margin-top: 50px;
+	}
+	#contact {
+		height: auto;
+		padding-bottom: 50px;
+		overflow: hidden;
+	}
+	#bio {
+		overflow: hidden;
+	}
+	img[src="./img/bg12.jpg"] {
+		visibility: hidden;
+	}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+	.navbar {
+		display: none;
+	}
+	section.module h2 {
+		font-size: 42px;
+	}
+	section.module p {
+		font-size: 16px;
+	}
+	section.module.parallax-1 {
+		/*padding: 300px 0;*/
+		;
+	}
+	section.module.parallax h1 {
+		/*font-size: 96px;*/
+		;
+	}
+	#header_nav .icons {
+		display: none;
+	}
+	#brand h3 {
+		top: -40px;
+	}
+	.contactInfo>div {
+		width: 100%;
+	}
+	.contactInfo {
+		margin-top: 0;
+	}
+	.LI-profile-badge {
+		position: static;
+		margin: 23px auto 0;
+		text-align: center;
+	}
+	#contact {
+		height: auto;
+		padding-bottom: 50px;
+		overflow: hidden;
+	}
+	#bio {
+		overflow: hidden;
+	}
+	img[src="./img/bg12.jpg"] {
+		visibility: hidden;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.main_content.casestudy section.txt div{
+		width: 100%;
+		padding-right: 0;
+	}
+		.main_content.casestudy div.illustration {
+	    width: calc(100%) !important;
+		}
+		.main_content.casestudy section.txt div.right {
+
+    padding-left: 0;
+
+}
+#brand h1 {
+	font-size: 30px;
+	padding: 0 40px;
+	height: auto;
+	line-height: 2;
+	margin-top: 100px;
+}
+#brand h3 {
+	top: 0;
+	left: 30%;
+}
+.folio p {
+	width: 100%;
+}
+#folio,
+#folio3 {
+	background-image: none;
+}
+.project.yp,
+.project.yuzu,
+.project.ss,
+.project.cisco,
+.project.kollective {
+	display: none;
+}
+#bio p {
+	width: 100%;
+	margin: 0 0 0px 0;
+}
+#bio p:last-child {
+	margin-bottom: 100px
+}
+.contactInfo>div {
+	width: 100%;
+}
+.contactInfo {
+	margin-top: 0;
+}
+.LI-profile-badge {
+	position: static;
+	margin-top: 50px;
+}
+#contact {
+	height: auto;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+#bio {
+	overflow: hidden;
+}
+img[src="./img/bg12.jpg"] {
+	visibility: hidden;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+	img[src="./img/bg12.jpg"] {
+		visibility: visible;
+	}
+	#header_nav .icons {
+		display: block;
+		position: absolute;
+		right: 4%;
+	}
+	.contactInfo>div {
+		width: 50%;
+		float: left;
+	}
+	#contact {
+		height: calc(100vh + 2px);
+	}
+
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+	section.module.parallax h1 {
+		/*font-size: 160px;*/
+		;
+	}
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
