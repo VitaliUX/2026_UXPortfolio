@@ -1,0 +1,449 @@
+// Each project's content expressed as structured data for native React rendering
+
+export type ContentBlock =
+  | { type: "h1"; text: string }
+  | { type: "h3"; text: string }
+  | { type: "mark"; text: string }
+  | { type: "p"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "toolbar"; items: { label: string; value: string }[] }
+  | { type: "image"; src: string; alt: string }
+  | { type: "video"; src: string; poster: string }
+  | { type: "gallery"; title: string; images: { src: string; alt: string }[] };
+
+export type ProjectSection = {
+  blocks: ContentBlock[];
+};
+
+export type ProjectData = {
+  title: string;
+  sections: ProjectSection[];
+};
+
+const projectDataMap: Record<string, ProjectData> = {
+  extreme: {
+    title: "Extreme Engagement Platform SaaS UX Redesign",
+    sections: [
+      {
+        blocks: [
+          { type: "h1", text: "Extreme Engagement Platform SaaS UX Redesign" },
+          { type: "h3", text: "Project Overview" },
+          { type: "p", text: "Acqueon Engagement Platform cloud-based omnichannel engagement platform for Amazon Connect and Cisco Unified, Packaged and Hosted Contact Centers." },
+          { type: "p", text: "Main clients are Banking and Telemarketing businesses." },
+          { type: "mark", text: "Product Problems" },
+          { type: "p", text: "The current product features and flows were a source of confusion for our clients." },
+          { type: "p", text: "Not intuitive navigation and basic active elements." },
+          { type: "p", text: "Too many unnecessary and complex technical settings (for a non-technical user, business user) are existing in The New Campaign Creation flow." },
+          { type: "p", text: "The Dashboard doesn't have needful and useful information and metrics for business sale specialists, reflecting current live sales status." },
+          { type: "p", text: "Errors in user iterations." },
+          { type: "p", text: "Also, the UI Design started to feel outdated compared to our competitors." },
+          { type: "mark", text: "Goals" },
+          { type: "ul", items: [
+            "To optimize the process of New Campaign Creating for an average non-techy user.",
+            "To create different dashboards for specific user types, especially for Sales Specialists.",
+            "Refresh design, optimize the navigation, fix UX errors.",
+          ]},
+          { type: "image", src: "/mobi/img/ac_bg.png", alt: "Acqueon Engagement Platform" },
+          { type: "toolbar", items: [
+            { label: "Role", value: "UX/UI Designer" },
+            { label: "Tools", value: "Figma, XD, Zeplin, Omnigraffle, Zeroheight" },
+            { label: "UX areas", value: "Qualitative Research, Personas Building, Information Architecture, Wireframes, Product Design, Design System Creation" },
+            { label: "Date", value: "2020" },
+          ]},
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "1.0 Discovery & Tasks Analysis" },
+          { type: "mark", text: "Internal Discovery Research" },
+          { type: "p", text: "We decided to conduct a set of internal quantitative discovery user research interviews. The idea was to collect current product issues, pain points, ideas, to define main user tasks and flows. We interviewed our Software Implementation Engineers (they usually work directly with our clients on the Software implementation), management team, and main stakeholders. The total number of participants: ~10. We conducted the interviews via video conferencing, phone, and in-person." },
+          { type: "mark", text: "Features Prioritization" },
+          { type: "p", text: "Based on our discovery research we defined main UX issues and features for our future updates. We prioritized them for the next release using the effort/impact matrix, determined MVP (minimal viable product) for the next release." },
+          { type: "image", src: "/mobi/img/ac_tb.jpg", alt: "Tasks" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "2.0 Personas & Wireframes" },
+          { type: "mark", text: "Personas" },
+          { type: "p", text: "Based on their findings, and input from our VP of Engineering and user task analysis I determined main personas and user journeys." },
+          { type: "p", text: "For the first release, we decided to build Dashboard UX just a Business Sales Specialist, as the top priority feature." },
+          { type: "mark", text: "Interaction Design" },
+          { type: "p", text: "I printed out and reviewed in detail all user flows of the previous version of the software. I optimized all pain points, minimized the number of steps in interactions. Removed all outdated and not suitable UI components and application terms at the wireframes building stage." },
+          { type: "p", text: "One of the objectives was to design an intuitive application for even not technical audience — sales specialists, cc (contact center) agents supervisors, cc agent. The user experience should be simple and organic as basic Tax filling or creating a new IRA account. Should look more like a consumer faced application. I tried to implement these principles in my interaction design." },
+          { type: "p", text: "We optimized cluttered and overwhelmed navigation, defined new Navigation Architecture." },
+          { type: "p", text: "For my wireframes, I used Figma first time, worked with Omnigraffle before." },
+          { type: "image", src: "/mobi/img/ac_pr.png", alt: "Personas" },
+          { type: "image", src: "/mobi/img/ac_bp1.png", alt: "Research" },
+          { type: "image", src: "/mobi/img/ac_wf.png", alt: "Wireframes" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "3.0 UX Evaluation" },
+          { type: "p", text: "We decided to test a clickable XD prototype, and also have a set of remote online interviews. XD tool (Figma as well) is great for collaborative online testing and getting quick feedback." },
+          { type: "p", text: "Our management team, stakeholders, and implementation team feedback were analyzed and incorporated into the final design solution." },
+          { type: "image", src: "/mobi/img/ac_sc3.png", alt: "Results" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "4.0 Final Design Solution" },
+          { type: "p", text: "As the main design solution, we selected minimalistic, neutral, calm design. It suits well for white label solution and a custom skin design implementation in the future. I followed the company fonts and colors style guides." },
+          { type: "p", text: "For the VD solution I also used Figma first time and pretty happy with the tool." },
+          { type: "image", src: "/mobi/img/ac_vd4.png", alt: "Results" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "5.0 Before / After" },
+          { type: "p", text: "Now you can compare the Dashboard and the Create New Campaign Wizard designs. What was before and what our team has designed." },
+          { type: "image", src: "/mobi/img/ac_ba.png", alt: "Before/After" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "6.0 Design System Building" },
+          { type: "p", text: "One of the project objectives was to unify style and design elements across all the Acqueon Tools. I decided to build the Acqueon Design System." },
+          { type: "p", text: "I selected Product calling Zeroheight for DS building. It has a plugin allowing to integrate Figma, XD or Zeplin components directly." },
+          { type: "image", src: "/mobi/img/ac_ds4.png", alt: "Design System" },
+        ],
+      },
+    ],
+  },
+
+  acqueon: {
+    title: "Acqueon Engagement Platform SaaS UX Redesign",
+    sections: [
+      {
+        blocks: [
+          { type: "h1", text: "Acqueon Engagement Platform SaaS UX Redesign" },
+          { type: "h3", text: "Project Overview" },
+          { type: "p", text: "Acqueon Engagement Platform cloud-based omnichannel engagement platform for Amazon Connect and Cisco Unified, Packaged and Hosted Contact Centers." },
+          { type: "p", text: "Main clients are Banking and Telemarketing businesses." },
+          { type: "mark", text: "Product Problems" },
+          { type: "p", text: "The current product features and flows were a source of confusion for our clients." },
+          { type: "p", text: "Not intuitive navigation and basic active elements." },
+          { type: "p", text: "Too many unnecessary and complex technical settings (for a non-technical user, business user) are existing in The New Campaign Creation flow." },
+          { type: "p", text: "The Dashboard doesn't have needful and useful information and metrics for business sale specialists, reflecting current live sales status." },
+          { type: "p", text: "Errors in user iterations." },
+          { type: "p", text: "Also, the UI Design started to feel outdated compared to our competitors." },
+          { type: "mark", text: "Goals" },
+          { type: "ul", items: [
+            "To optimize the process of New Campaign Creating for an average non-techy user.",
+            "To create different dashboards for specific user types, especially for Sales Specialists.",
+            "Refresh design, optimize the navigation, fix UX errors.",
+          ]},
+          { type: "image", src: "/mobi/img/ac_bg.png", alt: "Acqueon Engagement Platform" },
+          { type: "toolbar", items: [
+            { label: "Role", value: "UX/UI Designer" },
+            { label: "Tools", value: "Figma, XD, Zeplin, Omnigraffle, Zeroheight" },
+            { label: "UX areas", value: "Qualitative Research, Personas Building, Information Architecture, Wireframes, Product Design, Design System Creation" },
+            { label: "Date", value: "2020" },
+          ]},
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "1.0 Discovery & Tasks Analysis" },
+          { type: "mark", text: "Internal Discovery Research" },
+          { type: "p", text: "We decided to conduct a set of internal quantitative discovery user research interviews. The idea was to collect current product issues, pain points, ideas, to define main user tasks and flows. We interviewed our Software Implementation Engineers (they usually work directly with our clients on the Software implementation), management team, and main stakeholders. The total number of participants: ~10. We conducted the interviews via video conferencing, phone, and in-person." },
+          { type: "mark", text: "Features Prioritization" },
+          { type: "p", text: "Based on our discovery research we defined main UX issues and features for our future updates. We prioritized them for the next release using the effort/impact matrix, determined MVP (minimal viable product) for the next release." },
+          { type: "image", src: "/mobi/img/ac_tb.jpg", alt: "Tasks" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "2.0 Personas & Wireframes" },
+          { type: "mark", text: "Personas" },
+          { type: "p", text: "Based on their findings, and input from our VP of Engineering and user task analysis I determined main personas and user journeys." },
+          { type: "p", text: "For the first release, we decided to build Dashboard UX just a Business Sales Specialist, as the top priority feature." },
+          { type: "mark", text: "Interaction Design" },
+          { type: "p", text: "I printed out and reviewed in detail all user flows of the previous version of the software. I optimized all pain points, minimized the number of steps in interactions. Removed all outdated and not suitable UI components and application terms at the wireframes building stage." },
+          { type: "p", text: "One of the objectives was to design an intuitive application for even not technical audience — sales specialists, cc (contact center) agents supervisors, cc agent. The user experience should be simple and organic as basic Tax filling or creating a new IRA account. Should look more like a consumer faced application. I tried to implement these principles in my interaction design." },
+          { type: "p", text: "We optimized cluttered and overwhelmed navigation, defined new Navigation Architecture." },
+          { type: "p", text: "For my wireframes, I used Figma first time, worked with Omnigraffle before." },
+          { type: "image", src: "/mobi/img/ac_pr.png", alt: "Personas" },
+          { type: "image", src: "/mobi/img/ac_bp1.png", alt: "Research" },
+          { type: "image", src: "/mobi/img/ac_wf.png", alt: "Wireframes" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "3.0 UX Evaluation" },
+          { type: "p", text: "We decided to test a clickable XD prototype, and also have a set of remote online interviews. XD tool (Figma as well) is great for collaborative online testing and getting quick feedback." },
+          { type: "p", text: "Our management team, stakeholders, and implementation team feedback were analyzed and incorporated into the final design solution." },
+          { type: "image", src: "/mobi/img/ac_sc3.png", alt: "Results" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "4.0 Final Design Solution" },
+          { type: "p", text: "As the main design solution, we selected minimalistic, neutral, calm design. It suits well for white label solution and a custom skin design implementation in the future. I followed the company fonts and colors style guides." },
+          { type: "p", text: "For the VD solution I also used Figma first time and pretty happy with the tool." },
+          { type: "image", src: "/mobi/img/ac_vd4.png", alt: "Results" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "5.0 Before / After" },
+          { type: "p", text: "Now you can compare the Dashboard and the Create New Campaign Wizard designs. What was before and what our team has designed." },
+          { type: "image", src: "/mobi/img/ac_ba.png", alt: "Before/After" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "6.0 Design System Building" },
+          { type: "p", text: "One of the project objectives was to unify style and design elements across all the Acqueon Tools. I decided to build the Acqueon Design System." },
+          { type: "p", text: "I selected Product calling Zeroheight for DS building. It has a plugin allowing to integrate Figma, XD or Zeplin components directly." },
+          { type: "image", src: "/mobi/img/ac_ds4.png", alt: "Design System" },
+        ],
+      },
+    ],
+  },
+
+  cisco2: {
+    title: "Cisco/Broadsoft Contact Center Agent Desktop SaaS",
+    sections: [
+      {
+        blocks: [
+          { type: "h1", text: "Cisco/Broadsoft Contact Center Agent Desktop SaaS" },
+          { type: "h3", text: "Product Goals" },
+          { type: "p", text: "Goals: The main goal of our CC-One (Broadsoft Contact Center) organization was to build a new level of Omni-Channel Contact Center Cloud Solution." },
+          { type: "p", text: "UX Challenges: One of the general UX challenges was to transform the Broadsoft Contact Center Salesforce widget (320 x 480px) experience into a full desktop SaaS solution. Integrate it with our Analyzer system to deliver real-time analytics to agents, their managers and higher." },
+          { type: "p", text: "My role, as a UX/UI Designer, was to design an interactive and visual solution for the product." },
+          { type: "image", src: "/mobi/img/cisco_sm.png", alt: "Current Agent Desktop Design" },
+          { type: "toolbar", items: [
+            { label: "Role", value: "Product UX/UI Designer" },
+            { label: "Tools", value: "Omnigraffle, Sketch" },
+            { label: "Technologies", value: "HTML, CSS, AdminLTE, Angular" },
+            { label: "Date", value: "2016–2017" },
+          ]},
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "1.0 Research" },
+          { type: "p", text: "Normal UX research for this kind of project should include user research feedback information, analytics tools data, competitors analysis of this business sector and inspirational research of modern design trends. The synthesis of these four sources is giving a good foundation for a succeeding design process." },
+          { type: "p", text: "In this particular case, I had just VP input information, based on his product knowledge and information about our users from the product team. Besides that, I researched current competitors and nowadays trends in the Contact Centers sector." },
+          { type: "image", src: "/mobi/img/caseCisco/research.png", alt: "Research" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "2.0 UX Wireframes" },
+          { type: "p", text: "Based on the initial Ramesh's and stakeholders' input information I designed the first round of wireframes using Omnigraffle tools. After general approving of the UX flow, I continued to work in Sketch on a visual solution, not touching wireframes. All following UX issues are resolved in color Sketch mode." },
+          { type: "image", src: "/mobi/img/caseCisco/wireframes2.png", alt: "Wireframes" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "3.0 Visual UI Solution" },
+          { type: "p", text: "From a few different color schemes, our team selected a green one. It was matching well the Broadsoft brand style. Afterward, we came with an idea to let a user change their main colors and style, to create a custom theme solution. I worked also on our product style customization and themes." },
+          { type: "image", src: "/mobi/img/caseCisco/visual.png", alt: "Visual Solution" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "4.0 Design Patterns and Iconography" },
+          { type: "p", text: "During the whole design cycle, I was also focused on producing new icons and design elements for our design library. I created the Broadsoft icon set with 70 icons for any Broadsoft Contact Center tools needs. This icon set was converted to SVG images and an online iconic web font was created for our applications." },
+          { type: "image", src: "/mobi/img/caseCisco/f5.png", alt: "Icon font" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "5.0 Results" },
+          { type: "p", text: "The next level of the Contact Center application was built. Designed one of the main products in the Broadsoft acquisition portfolio. Selling revenue was increased in 2016–2019 years." },
+          { type: "video", src: "/mobi/img/BroadSoft CC-One- The Cloud-Based Contact Center Solution(1).mp4", poster: "/mobi/img/caseCisco/poster.png" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "h3", text: "5.1 Before/After" },
+          { type: "image", src: "/mobi/img/caseCisco/mobile2.png", alt: "Before" },
+          { type: "image", src: "/mobi/img/caseCisco/after_ci.png", alt: "After" },
+        ],
+      },
+      {
+        blocks: [
+          { type: "gallery", title: "5.2 CC-One Related Designs", images: [
+            { src: "/mobi/img/portfolios/cisco/16.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/24.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/1.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/36.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/13.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/15.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/2.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/3.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/5.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/6.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/7.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/8.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/9.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/10.png", alt: "" },
+          ]},
+        ],
+      },
+    ],
+  },
+
+  cisco: {
+    title: "Cisco / Broadsoft Inc. UX Projects",
+    sections: [
+      {
+        blocks: [
+          { type: "gallery", title: "Cisco / Broadsoft Inc. (acquired in 2018) UX Projects", images: [
+            { src: "/mobi/img/portfolios/cisco/16.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/24.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/1.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/36.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/13.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/15.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/2.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/3.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/5.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/8.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/6.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/7.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/9.png", alt: "" },
+            { src: "/mobi/img/portfolios/cisco/10.png", alt: "" },
+          ]},
+        ],
+      },
+    ],
+  },
+
+  kollective: {
+    title: "Kollective Tech. Admin Tool UX/UI Project",
+    sections: [
+      {
+        blocks: [
+          { type: "gallery", title: "Kollective Tech. Admin Tool UX/UI Project", images: [
+            { src: "/mobi/img/portfolios/kollective/13.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/14.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/15.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/1.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/3.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/2.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/4.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/5.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/1a.png", alt: "" },
+            { src: "/mobi/img/portfolios/kollective/12.png", alt: "" },
+          ]},
+        ],
+      },
+    ],
+  },
+
+  yuzu: {
+    title: "Yuzu UX Projects",
+    sections: [
+      {
+        blocks: [
+          { type: "gallery", title: "Yuzu UX Projects", images: [
+            { src: "/mobi/img/portfolios/yuzu/ya1.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya4.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya6a.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya10.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya11a.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya12.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya13.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya14.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya15.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya16.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya17.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya19.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya20.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya22.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya23.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya24.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya25.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya26.png", alt: "" },
+            { src: "/mobi/img/portfolios/yuzu/ya27.png", alt: "" },
+          ]},
+        ],
+      },
+    ],
+  },
+
+  yp: {
+    title: "YP UX/UI Projects",
+    sections: [
+      {
+        blocks: [
+          { type: "gallery", title: "YP UX/UI Projects", images: [
+            { src: "/mobi/img/portfolios/yp/m2.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m4.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m3.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m5.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m6.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m7.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m8.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m9.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/m10.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/sc1.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/sc2.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/sc3.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/sc4.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/sc5.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/sc9.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/fc2.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/fc3.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/fc4.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/fc5.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/fc8.png", alt: "" },
+            { src: "/mobi/img/portfolios/yp/1.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/yp/4.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/yp/5.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/yp/7.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/yp/9.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/yp/16.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/yp/misc/2.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/yp/misc/3.jpg", alt: "" },
+          ]},
+        ],
+      },
+    ],
+  },
+
+  solutionset: {
+    title: "SolutionSet UX Projects",
+    sections: [
+      {
+        blocks: [
+          { type: "gallery", title: "SolutionSet UX Projects", images: [
+            { src: "/mobi/img/portfolios/solutionset/39.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/11.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/3.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/9.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/10.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/12.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/14.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/15.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/16.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/17.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/18.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/19.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/20.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/21.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/22.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/23.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/24.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/25.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/26.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/27.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/28.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/29.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/30.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/33.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/34.jpg", alt: "" },
+            { src: "/mobi/img/portfolios/solutionset/35.jpg", alt: "" },
+          ]},
+        ],
+      },
+    ],
+  },
+};
+
+export default projectDataMap;
